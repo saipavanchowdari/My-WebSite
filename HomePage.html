@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/HomePage.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+    <script>
+        function openlogin() {
+            console.log("Inside login_pop_up");
+            document.getElementById("login_cred").style.display = "block";
+        }
+        function clickBody() {
+            document.getElementById("login_cred").style.display = "none";
+        }
+    </script>
+    <script src="../JS/login.js"></script>
+</head>
+
+
+
+<body>
+    <header>
+        <div class="user">
+            <a href="#home">
+            <img src="../Images/myphoto.jpg" alt = "" class = "photo" onClick="window.location.reload();">
+            </a>
+            <br>
+            <h3 class = "name">Sai Pavan Chowdari</h3>
+            <p class="post">Masters in Computer Science and Software Engineering</p>
+        </div>
+        <nav class ="navbar">
+            <ul>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Journals">Journals</a></li>
+                <li><a href="#Games">My Games</a></li>
+                <li><a href="#Models">3D-Models</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            </ul>
+        </nav>
+        <!--Link Logos-->
+    </header>
+
+    <div class = "login" id="login_button_ext">
+        <button class = "login_btn" onclick="openlogin()">Login</button>
+    </div>
+
+    <div class="github_div">
+        <a href ="https://github.com/saipavanchowdari?tab=repositories"><img src="../Images/github.png"  alt = "Github Icon" class = "github_icon" width="40rem" height="40rem"></a>
+    </div>
+    <div class="LinkedIn">
+        <a href ="https://www.linkedin.com/in/sai-pavan-chowdari-e-j-0b3270151/"><img src="../Images/LI-In-Bug.png"  alt = "LinkedIn Icon" class = "LinkedIn" width="40rem" height="40rem"></a>
+    </div>
+
+    <div class = "login_pop" id="login_cred">
+        <form id="login_form">
+            <input type="text" name="username" id="username" placeholder=" username" required><br><br>
+            <input type="password" name="password" id="password" placeholder=" password" required><br><br>
+            <button class = "login_pop_btn" onclick="submitlogin()">Login</button>
+        </form>
+    </div>
+
+   <div id="menu" class="fas fa-bars"></div>
+   
+   
+    <section class ="home" id = "home">
+    <h3>Hi There !</h3>
+    <h1>I'm <span>Sai Pavan Chowdari</span></h1>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde deserunt odio blanditiis suscipit quos hic odit voluptate nostrum vero porro, saepe dolores nulla quidem dolore similique obcaecati quas amet?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum autem unde nesciunt dolorem eaque reiciendis repellat accusamus, provident nemo, aperiam, labore nam sint incidunt quam dolore nulla illum in itaque!</p>
+    <a href="#info"><button class = "btn">about &#128100<i class= "fas fa-user"></i></button></a>
+    </section>
+
+    <!-- About Section-->
+    <section class ="info" id ="info">
+        <h1 class="heading"><span>About</span> me </h1>
+        <div class = "row">
+            <div class="info_content">
+                <h3> <span> name : </span> Sai Pavan Chowdari E J</h3>
+                <h3> <span> age : </span> 24 </h3>
+                <h3> <span> qualification : </span> Masters degree</h3>
+                <h3> <span> Major : </span> Computer Science and Software Engineering</h3>
+                <a href="#"><button class="btn">donwload CV <i class="fas fa-download"></i></button></a>
+
+            </div>
+        
+            <div class = "counter">
+                <div class="box">
+                    <span>2+</span>
+                    <h3>years of experience</h3>
+                </div>
+                <div class="box">
+                    <span>companies</span>
+                    <h3>projects completed</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Education Section-->
+    <section class ="Projects" id ="Projects">
+        <h1 class="heading"><span>My</span> projects </h1>
+        <div class = "box-container">
+            <div class="box">
+                <i class="Project"></i>
+                <span>Object Detection for Autonomus Vehicles</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quis vitae voluptates accusantium ullam officia eaque, alias necessitatibus cum</p>
+            </div>
+
+            <div class="box">
+                <i class="Project"></i>
+                <span>Deep fake Detection</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quis vitae voluptates accusantium ullam officia eaque, alias necessitatibus cum</p>
+            </div>
+
+            <div class="box">
+                <i class="Project"></i>
+                <span>Unity - Zombie World</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quis vitae voluptates accusantium ullam officia eaque, alias necessitatibus cum</p>
+            </div>
+
+            <div class="box">
+                <i class="Project"></i>
+                <span>Deep fake detection </span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quis vitae voluptates accusantium ullam officia eaque, alias necessitatibus cum</p>
+            </div>
+
+            <div class="box">
+                <i class="Project"></i>
+                <span>Sentimental Analysis</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quis vitae voluptates accusantium ullam officia eaque, alias necessitatibus cum</p>
+            </div>
+
+            <div class="box">
+                <i class="Project"></i>
+                <span>Word prediction using N-gram</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quis vitae voluptates accusantium ullam officia eaque, alias necessitatibus cum</p>
+            </div>
+
+            <div class="box">
+                <i class="Project"></i>
+                <span>Provider network Adequacy</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quis vitae voluptates accusantium ullam officia eaque, alias necessitatibus cum</p>
+            </div>
+
+            <div class="box">
+                <i class="Project"></i>
+                <span>Advanced Play fair Cipher</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quis vitae voluptates accusantium ullam officia eaque, alias necessitatibus cum</p>
+            </div>
+
+            <div class="box">
+                <i class="Project"></i>
+                <span>Vtop Infinity</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quis vitae voluptates accusantium ullam officia eaque, alias necessitatibus cum</p>
+            </div>
+
+            <div class="box">
+                <i class="Project"></i>
+                <span>Psychological experiments Survey</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quis vitae voluptates accusantium ullam officia eaque, alias necessitatibus cum</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journals Section-->
+    <section class ="Journals" id ="Journals">
+        <h1 class="heading"><span>My</span> Papers </h1>
+        <div class = "box-container">
+            <div class="box">
+                <a href = "https://link.springer.com/chapter/10.1007/978-981-33-6862-0_28" target="_blank">
+                <img src= "../Images/obj.jpg">
+                </a>
+                <h3><span>Object Detection for Autonomus Vehicles using YOLO family algorithms</span></h3>
+            </div>
+            <div class="box">
+                <a href = "https://www.ijraset.com/fileserve.php?FID=15856" target="_blank">
+                <img src= "../Images/software.jpg">
+                </a>
+                <h3><span>Software effort estimation techniques</span></h3>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 3D Section-->
+    <section class ="Models" id ="Models">
+        <h1 class="heading"><span>My</span> Models </h1>
+        <div class = "box-container">
+            <div class="3d-containe">
+                <script>
+                </script>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Game Section-->
+    <section class ="Games" id ="Games">
+        <h1 class="heading"><span>My</span> Games </h1>
+        <div class = "box-container">
+            <div class="box">
+                <form id="textarea">
+                    <input type="text" id="source" class="input_text_1" draggable="true" placeholder="Enter the text to detect your language: ">
+                </form>
+            </div>
+            <div class="box">
+                <form id="textarea">
+                    <input type="text" class="input_text" id ="target">
+                    <br>
+                    <br>
+                    <center><button onclick="apicall()" class="check_btn">Click</button></center>
+                </form>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section class ="Contact" id ="Contact">
+        <h1 class="heading"><span>Contact</span> me </h1>
+        <div class = "row">
+            <div class="content">
+                <h3 class="title">Contact Info</h3>
+                <div class="coninfo"> 
+                    <h3><i class = "fas fa-envelope"></i> epavanchowdary11@gmail.com </h3>
+                    <h3><i class = "fas fa-phone"></i> +1 945-265-3755 </h3>
+                    <h3><i class = "fa-solid fa-location-dot"></i></i> Indiana, USA - 46815 </h3>
+                </div>
+            </div>
+            <form action="" onsubmit="sendEmail()">
+                <button class="emailbutton">Mail me</button>
+            </form>
+        </div>
+        <script src ="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendemail()
+            {
+                let email = document.getElementById("email").value;
+                let subject = document.getElementById("subject").value;
+                let body = document.getElementById("area").value;
+
+                Email.send({
+                Host : "smtp.gmail.com",
+                Username : "epavanchowdary11@gmail.com",
+                Password : "Tdr$0100",
+                To : 'esaipavanchowdary11@gmail.com',
+                From : email,
+                Subject : subject,
+                Body : body
+                }).then(
+                    message => alert(message)
+                    );
+            }
+        </script>
+    </section>
+
+    
+
+</body>
+</html>

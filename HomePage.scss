@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+$yellow: #f9ca24;
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+
+  &::selection {
+    background: #f9ca24;
+    color: #333;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar-track {
+    width: 1.4rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #f9ca24;
+  }
+}
+
+body {
+  background: #111;
+  overflow-x: hidden;
+  padding-left: 35rem;
+	/* The image used */
+	background-image: url('/Images/2138011.png');
+  
+	/* Full height */
+	height: 100%; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.photo {
+  cursor: pointer;
+}
+
+.login {
+  position: absolute;
+  top: 3rem;
+  right: 7rem;
+  float: right;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+.login_btn {
+  padding: .7rem 3rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+
+  &:hover {
+    background: #f9ca24;
+  }
+}
+
+.login_pop {
+  position: absolute;
+  top: 10rem;
+  right: 2rem;
+  float: right;
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  border: 0.4rem solid #f9ca24;
+  display: none;
+
+  input {
+    border: 1rem;
+    height: 3rem;
+  }
+}
+
+.login_pop_btn {
+  padding: .7rem 3rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+  background: #f9ca24;
+}
+
+section {
+  min-height: 90vh;
+  padding: 1rem;
+}
+
+.btn {
+  padding: .7rem 3rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+
+  i {
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+  }
+
+  &:hover {
+    background: #f9ca24;
+  }
+}
+
+.heading {
+  text-align: center;
+  margin: 8rem 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: .1rem solid #fff4;
+  color: #fff;
+
+  span {
+    background: #f9ca24;
+    color: #111;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  background-image: url('/Images/2138011.png');
+  
+	/* Full height */
+	height: 100%; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+  .user img {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: 1rem;
+    border: 0.7rem solid #f9ca24;
+  }
+}
+
+.user img:hover {
+  transform: scale(1.1);
+}
+
+header {
+  .user {
+    .name {
+      font-size: 3.5rem;
+      color: #eee;
+    }
+
+    .post {
+      font-size: 2rem;
+      color: #eee;
+    }
+  }
+
+  .navbar {
+    width: 100%;
+
+    ul {
+      list-style: none;
+      padding: 1rem 3rem;
+
+      li a {
+        display: block;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        background: #333;
+        color: #fff;
+        font-size: 2rem;
+        border-radius: 5rem;
+
+        &:hover {
+          background: #f9ca24;
+        }
+      }
+    }
+  }
+}
+
+.github_div {
+  float: left;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  position: absolute;
+}
+
+.github_div img:hover {
+  transform: scale(1.1);
+}
+
+.LinkedIn {
+  margin-left: 5rem;
+  margin-top: 2rem;
+  position: absolute;
+}
+
+.LinkedIn img:hover {
+  transform: scale(1.1);
+}
+
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #333;
+  columns: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+
+  h3 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    animation-name: Name;
+    animation-duration: 1s;
+  }
+
+  p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+  }
+}
+
+@keyframes Name {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 300%;
+  }
+}
+
+.info {
+  margin-top: 10rem;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+
+    .info_content {
+      flex: 1 1 48rem;
+      padding: 2rem 1rem;
+      padding-left: 6rem;
+
+      h3 {
+        font-size: 2rem;
+        color: #f9ca24;
+        padding: 1rem 0;
+        font-weight: normal;
+
+        span {
+          color: #eee;
+          padding: 0 .5rem;
+        }
+      }
+    }
+
+    .counter {
+      flex: 1 1 48rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .box {
+        width: 20rem;
+        background: #222;
+        padding: 2rem;
+        margin: 2rem;
+
+        span {
+          font-size: 4rem;
+          color: #f9ca24;
+        }
+
+        h3 {
+          font-size: 2rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.Projects .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  padding-left: 3rem;
+
+  .box {
+    span {
+      font-size: 1.3r em;
+      background: #222;
+      color: #fff;
+      border-radius: 7rem;
+      font-size: small;
+      color: #f9ca24;
+      font-weight: bold;
+    }
+
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+
+    p {
+      font-size: 1.4rem;
+      color: black;
+      padding: 1rem 0;
+    }
+
+    i {
+      position: absolute;
+      top: -1.5rem;
+      left: -2.5rem;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 25%;
+      line-height: 5rem;
+      text-align: center;
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+}
+
+.Journals {
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+    .box {
+      height: 40rem;
+      width: 36rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      margin: 4rem;
+      cursor: pointer;
+
+      h3 {
+        font-size: 2rem;
+        color: #f9ca24;
+      }
+    }
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+}
+
+.Contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+  }
+
+  form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+
+    .box {
+      padding: 1.5rem;
+      margin: 1rem 0;
+      background: #3333;
+      color: #fff;
+      text-transform: none;
+      font-size: 1.7rem;
+      width: 100%;
+
+      &::placeholder {
+        text-transform: capitalize;
+      }
+    }
+
+    .message {
+      height: 15rem;
+      resize: none;
+    }
+  }
+
+  .content {
+    .title {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 3rem;
+      padding-bottom: 2rem;
+    }
+
+    .coninfo h3 {
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      color: #eee;
+      padding: 1rem 0;
+      font-weight: normal;
+
+      i {
+        padding-right: 1rem;
+        color: #f9ca24;
+      }
+    }
+  }
+}

@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+*::-moz-selection {
+  background: #f9ca24;
+  color: #333;
+}
+*::selection {
+  background: #f9ca24;
+  color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar-track {
+  width: 1.4rem;
+}
+html::-webkit-scrollbar-thumb {
+  background: #f9ca24;
+}
+
+body {
+  background: #111;
+  overflow-x: hidden;
+  padding-left: 35rem;
+  /* The image used */
+  background-image: url("/Images/2138011.png");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo {
+  cursor: pointer;
+}
+
+.login {
+  position: absolute;
+  top: 3rem;
+  right: 7rem;
+  float: right;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+.login_btn {
+  padding: 0.7rem 3rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+.login_btn:hover {
+  background: #f9ca24;
+}
+
+.login_pop {
+  position: absolute;
+  top: 10rem;
+  right: 2rem;
+  float: right;
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  border: 0.4rem solid #f9ca24;
+  display: none;
+}
+.login_pop input {
+  border: 1rem;
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.745);
+}
+
+.login_pop_btn {
+  padding: 0.7rem 3rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+  background: #f9ca24;
+}
+
+section {
+  min-height: 90vh;
+  padding: 1rem;
+}
+
+.btn {
+  padding: 0.7rem 3rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+.btn i {
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+}
+.btn:hover {
+  background: #f9ca24;
+}
+
+.heading {
+  text-align: center;
+  margin: 8rem 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2666666667);
+  color: #fff;
+}
+.heading span {
+  background: #f9ca24;
+  color: #111;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  background-image: url("/Images/2138011.png");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .user img {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  -o-object-fit: 1rem;
+     object-fit: 1rem;
+  border: 0.7rem solid #f9ca24;
+}
+
+.user img:hover {
+  transform: scale(1.1);
+}
+
+header .user .name {
+  font-size: 3.5rem;
+  color: #eee;
+}
+header .user .post {
+  font-size: 2rem;
+  color: #eee;
+}
+header .navbar {
+  width: 100%;
+}
+header .navbar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+header .navbar ul li a {
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: #333;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+header .navbar ul li a:hover {
+  background: #f9ca24;
+}
+
+.github_div {
+  float: left;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  position: absolute;
+}
+
+.github_div img:hover {
+  transform: scale(1.1);
+}
+
+.LinkedIn {
+  margin-left: 5rem;
+  margin-top: 2rem;
+  position: absolute;
+}
+
+.LinkedIn img:hover {
+  transform: scale(1.1);
+}
+
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #333;
+  -moz-columns: #fff;
+       columns: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+}
+.home h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.home h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  animation-name: Name;
+  animation-duration: 1s;
+}
+.home p {
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+@keyframes Name {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 300%;
+  }
+}
+.info {
+  margin-top: 10rem;
+}
+.info .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.info .row .info_content {
+  flex: 1 1 48rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+}
+.info .row .info_content h3 {
+  font-size: 2rem;
+  color: #f9ca24;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+.info .row .info_content h3 span {
+  color: #eee;
+  padding: 0 0.5rem;
+}
+.info .row .counter {
+  flex: 1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.info .row .counter .box {
+  width: 20rem;
+  background: #222;
+  padding: 2rem;
+  margin: 2rem;
+}
+.info .row .counter .box span {
+  font-size: 4rem;
+  color: #f9ca24;
+}
+.info .row .counter .box h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.Projects .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  padding-left: 3rem;
+}
+.Projects .box-container .box {
+  width: 27rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: 0.2rem solid #fff;
+  position: relative;
+}
+.Projects .box-container .box span {
+  font-size: 1.3r em;
+  background: #222;
+  color: #fff;
+  border-radius: 7rem;
+  font-size: small;
+  color: #f9ca24;
+  font-weight: bold;
+}
+.Projects .box-container .box p {
+  font-size: 1.4rem;
+  color: black;
+  padding: 1rem 0;
+}
+.Projects .box-container .box i {
+  position: absolute;
+  top: -1.5rem;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 25%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.Journals img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Journals .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+.Journals .box-container .box {
+  height: 40rem;
+  width: 36rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 4rem;
+  cursor: pointer;
+}
+.Journals .box-container .box h3 {
+  font-size: 2rem;
+  color: #f9ca24;
+}
+.Journals img:hover {
+  transform: scale(1.1);
+}
+
+.Games .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.Games .box-container .box h3 {
+  font-size: 2rem;
+  color: #f9ca24;
+}
+
+
+.Games .box-container .box{
+  height: 20rem;
+  width: 40rem;
+  border: 0.5rem solid black;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.Games .box-container .box .input_text{
+background-color: #111;
+border: 0.5rem solid black;
+color: #eee;
+width: 30rem;
+height: 10rem;
+}
+
+.Games .box-container .box .input_text_1{
+  background-color: #111;
+  border: 0.5rem solid black;
+  color: #eee;
+  width: 20rem; 
+  }
+
+.Games .box-container .box .check_btn{
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 1rem;
+      font-size: 2rem;
+      border: 1rem;
+      background: #333;
+  }
+
+.Contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Contact .row .content {
+  flex: 1 1 30rem;
+  padding: 4rem;
+  padding-bottom: 0;
+}
+.Contact .row form {
+  flex: 1 1 45rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+
+.emailbutton{
+  padding: 0.7rem 3rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 5rem;  
+}
+
+.emailbutton:hover{
+  background: #f9ca24;
+}
+
+.Contact .row form .box {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: rgba(0, 0, 0, 0.745);
+  color: #fff;
+  text-transform: none;
+  font-size: 1.7rem;
+  width: 100%;
+}
+.Contact .row form .box::-moz-placeholder {
+  text-transform: capitalize;
+}
+.Contact .row form .box::placeholder {
+  text-transform: capitalize;
+}
+.Contact .row form .message {
+  height: 15rem;
+  resize: none;
+}
+.Contact .row .content .title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.Contact .row .content .coninfo h3 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+.Contact .row .content .coninfo h3 i {
+  padding-right: 1rem;
+  color: #f9ca24;
+}/*# sourceMappingURL=HomePage.css.map */
